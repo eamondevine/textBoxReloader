@@ -1,0 +1,63 @@
+.container {
+	display: grid;
+	grid-template-columns: 420px 420px 420px;
+	grid-template-rows: 320px 320px 320px;
+	justify-content: center;
+	gap: 20px;
+	grid-template-areas:
+	"one two three"
+	"four five six"
+	"seven eight nine"; /*This is like a telephone keypad for positioning ref*/
+	}		
+.box {
+	  width: 300px; /* Width of the box */
+      height: 200px; /* Height of the box */
+      padding: 20px; /* Padding inside the box */
+      border: 2px solid #333; /* Solid border with color */
+      margin: auto; /* Space outside the box */
+      background-color: #f0f0f0; /* Background color */
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+	  text-align: center;
+	  grid-area: two;
+	  transform: rotate(-5deg);
+	  border-radius: 25px;
+    }
+	.boxTopRight {
+	  width: 600px; /* Width of the box */
+      height: 200px; /* Height of the box */
+      padding: 20px; /* Padding inside the box */
+      border: 2px solid #333; /* Solid border with color */
+	  color: #e9faff;
+      background-color: #ff8700; /* Background color */
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+	  text-align: center;
+	  grid-area: three;
+	  
+	  position: relative;
+	  top: 50px;
+	  transform: skew(5deg,10deg);
+	  border-radius: 50%;
+    }
+	.box2 {
+	  width: 400px; /* Width of the box */
+      height: 200px; /* Height of the box */
+      padding: 20px; /* Padding inside the box */
+      border: 2px solid #333; /* Solid border with color */
+      margin: auto; 
+      background-color: #f0f0f0; /* Background color */
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+	  text-align: center;
+	  grid-area: five;
+	  transform: rotate(4deg);
+	  border-radius: 10px;
+    }
+	#prob {
+		font-family: "Lucida Handwriting";
+	}
+	.hidden {
+	  display: none; /* hides the text by toggle */
+	}
+	.largerText {
+		font-size: 40px;
+	}
+		
