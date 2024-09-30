@@ -34,8 +34,6 @@ function updateBoxTwo(message) {
 	thirdOutput.textContent = message;
 }
 
-	
-
 // Here are the event listeners that toggle visibility upon clicking the DIVs by id 
 firstOutput.addEventListener('click', () => toggleMessage(messageOne));
 secondOutput.addEventListener('click', () => {
@@ -44,13 +42,13 @@ secondOutput.addEventListener('click', () => {
 	console.log(clickerSecondOutput);
 });
 
-if (clickerSecondOutput => 1) {
-		thirdOutput.addEventListener('click', () => {
+thirdOutput.addEventListener('click', () => {
+	if (clickerSecondOutput >= 1) {
 		updateBoxTwo(messageThree);
 		clickerThirdOutput++;
 		console.log(clickerThirdOutput);
-	})
 	}
+});
 
 thirdOutput.addEventListener('click', () => {
 	if (clickerThirdOutput > 1) {
